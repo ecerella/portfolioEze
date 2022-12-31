@@ -1,0 +1,9 @@
+.fotPerf{
+    max-height: 100%;
+    max-width: 100%;
+    border: 4px solid ;
+}
+.cardpro:hover{
+    box-shadow: 5px 50px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
