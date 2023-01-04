@@ -13,7 +13,7 @@ import { TokenService } from 'src/app/service/token.service';
 
 export class LoginComponent implements OnInit{
   isLogged = false;
-  isLogginDail = false;
+  isLogginFail = false;
   loginUsuario!: LoginUsuario;
   nombreUsuario!: string;
   password!: string;
@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit{
   }
   onLogin():void{
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
-       this.authService.login(this.loginUsuario).subscribe(data =>{
+    this.authService.login(this.loginUsuario).subscribe(data =>{
         this.isLogged = true;
         this.isLogginFail = false;
         this.tokenService.setToken(data.token);
@@ -44,6 +44,6 @@ export class LoginComponent implements OnInit{
         this.isLogginFail= true;
         this.errMsj = err.error.mensaje;
         console.log(this.errMsj);
-      }
-    }
+      })
+  }
 }

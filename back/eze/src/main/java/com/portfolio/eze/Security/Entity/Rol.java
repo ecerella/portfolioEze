@@ -5,6 +5,7 @@
 package com.portfolio.eze.Security.Entity;
 
 import com.portfolio.eze.Security.Enums.RolNombre;
+import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
