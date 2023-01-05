@@ -1,43 +1,31 @@
-<!--educacion-->
-<h1 class=" text-center intro pt-4">educacion</h1>
-<section class="presentacion mt-5"></section>
-<div class="row row-cols-2 row-cols-md-4 g-4">
-    <div class="col">
-        <div class="card">
-            <img src="../../../assets/img/diseño.jpg" class="card-img-top" alt="diseño">
-            <div class="card-body">
-                <h5 class="card-title">Diseño Grafico</h5>
-                <p class="card-text">ilustrator, photoshop y quarxpress, mac, linux. diseño, impresion y cortes,
-                    estampados, banners, vinilos.</p>
-            </div>
-        </div>
+<div class="row">
+    <h1>Educacion</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
     </div>
-    <div class="col">
-        <div class="card">
-            <img src="../../../assets/img/nano.jpg" class="card-img-top" alt="arduino">
-            <div class="card-body">
-                <h5 class="card-title">Microcontroladores</h5>
-                <p class="card-text">conocimiento adquirido del desarrollo de contenido educativo de la
-                    plataforma Ecta y su robotica educativa.</p>
-            </div>
-        </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2>{{Educacion.nombreE}}</h2>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-success" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <div class="col">
-        <div class="card">
-            <img src="../../../assets/img/manzone.jpg" class="card-img-top" alt="manzone">
-            <div class="card-body">
-                <h5 class="card-title">Manzone artesanal</h5>
-                <p class="card-text">Emprendimiento propio, de elaboracion de bebidas fermentadas a nivel local.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img src="../../../assets/img/programacion.jpg" class="card-img-top" alt="programacion">
-            <div class="card-body">
-                <h5 class="card-title">Programacion</h5>
-                <p class="card-text">Estudiante en cursos de programacion, Argentina Programa I y II</p>
-            </div>
-        </div>
-    </div>
+
 </div>
