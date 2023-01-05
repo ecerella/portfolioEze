@@ -8,8 +8,8 @@
             <li class="list-group-item"><a href="https://www.facebook.com/ezequiel.ubuntu"target="_blank"><i class="fa-brands fa-facebook fa-2x text-white"></i></a></li>
             <li class="list-group-item"><a href="https://web.whatsapp.com/"target="_blank"><i class="fa-brands fa-whatsapp fa-2x text-white"></i></a></li>
             <li class="list-group-item"><a href="https://github.com/ecerella"target="_blank"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
-            <li class="list-group-item"><a href="/login"><i class="fa-solid fa-user-lock fa-2x text-white" *ngIf="isLogged"></i></a></li>
-            <li class="list-group-item"><a href="/login"><i class="fa-solid fa-user fa-2x text-white" *ngIf="!isLogged"></i></a></li>
+            <li *ngIf="isLogged" class="list-group-item"><a href="/login"><i class="fa-solid fa-user-lock fa-2x text-white" ></i></a></li>
+            <li *ngIf="!isLogged" class="list-group-item"><a href="/login"><i class="fa-solid fa-user fa-2x text-white" ></i></a></li>
         </ul>
     </div>
 </nav>
