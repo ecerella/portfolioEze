@@ -1,20 +1,41 @@
-section.banner{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(../../../assets/img/baner2.jpg);
-    height: 100vh;
-    position: relative;
-    -msn-background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+.container {
+    position:relative;
+
 }
-h1.intro{
-    padding-top: 15%;
-    font-size: 2.3rem;
+.img#imagen_de_fondo {
+    min-height: 100%;
+    min-width: 800px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-h2.intro{
-    font-size: 5rem;
+
+.container h1{
+    color: blue;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-h3.intro{
-    font-size: 2.7rem;
+
+.container h2{
+    color: rgb(227, 253, 75);
+    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h3{
+    color: rgb(202, 59, 190);
+    font-size: 1.7rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

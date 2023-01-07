@@ -3,13 +3,14 @@
 }
 .navbar-brand{
     width: 25%;
+    margin-right: 0.5em;
+    
 }
 .collapse navbar-collapse{
     color: white;
 }
 .list-group{
     --bs-list-group-bg: transparent;
-
 }
 .fa-brands.fa-facebook.fa-2x:hover{
     --bs-text-opacity: 1;

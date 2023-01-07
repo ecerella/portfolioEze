@@ -1,0 +1,6 @@
+.container {
+    background-image: url(../../../assets/img/baner2.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+
+}
