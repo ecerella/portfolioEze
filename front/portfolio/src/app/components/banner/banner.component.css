@@ -1,41 +1,28 @@
-
-.container {
-    position:relative;
-
+.conte {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(0 0 0 / .50), rgb(0 0 0 / 1)),url(../../../assets/img/bannerMaster.jpg);
+    background-size: cover;
+    background-position: center;
 }
-.img#imagen_de_fondo {
-    min-height: 100%;
-    min-width: 800px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
+.contenedor {
+    font-family: 'Kaushan Script', cursive;
+    color: #fff;
+    width: 50%;
+    text-align: center;
 }
-
-.container h1{
-    color: blue;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.container h2{
-    color: rgb(227, 253, 75);
+.txtuno {
+    color: rgb(104, 8, 56);
     font-size: 3.5rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
-
-.container h3{
-    color: rgb(202, 59, 190);
-    font-size: 1.7rem;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.txtdos {
+    color: rgb(26, 106, 211);
+    font-size: 4.5rem;
+}
+.txtres {
+    color: rgb(241, 218, 10);
+    font-size: 2rem;
 }

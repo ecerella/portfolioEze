@@ -2,9 +2,8 @@
     background-color: black;
 }
 .navbar-brand{
-    width: 25%;
+    width: 20%;
     margin-right: 0.5em;
-    
 }
 .collapse navbar-collapse{
     color: white;

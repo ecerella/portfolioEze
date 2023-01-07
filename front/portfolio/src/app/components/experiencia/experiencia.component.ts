@@ -39,8 +39,7 @@ export class ExperienciaComponent implements OnInit{
           error: err => {
             alert("No se pudo borrar la experiencia");
           }
-        }
-      );
+        });
     }
   }
 }
