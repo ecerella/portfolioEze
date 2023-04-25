@@ -10,14 +10,20 @@
     <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-            <div class="row"><p class="txtdos">{{ persona.nombre }} {{ persona.apellido }}</p></div>
+            <div class="row">
+              <p class="txtdos">
+              {{persona?.nombre}}, {{persona?.apellido}}
+              </p>
+          </div>
         </div>
         <div class="col-1"></div>
       </div>
       <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-            <div class="row"><p class="txtres">full stack developer</p></div>
+            <div class="row">
+              <p class="txtres">full stack developer</p>
+            </div>
         </div>
         <div class="col-1"></div>
       </div>

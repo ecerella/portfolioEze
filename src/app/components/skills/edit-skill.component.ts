@@ -29,7 +29,7 @@ export class EditSkillComponent implements OnInit {
           this.router.navigate(['']);
         }
       }
-    );
+    )
   }
 
   onUpdate(){
@@ -45,6 +45,6 @@ export class EditSkillComponent implements OnInit {
           this.router.navigate(['']);
         }
       }
-    );
+    )
   }
 }

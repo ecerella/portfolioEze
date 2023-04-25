@@ -24,11 +24,12 @@ export class EducacionComponent implements OnInit{
   }
 
   cargarEducacion(): void{
-    this.educacionS.lista().subscribe(
+    this.educacionS.lista()
+    .subscribe(
       data =>{
         this.educacion = data;
       }
-    )
+    );
   }
 
   delete(id?: number){
@@ -42,8 +43,7 @@ export class EducacionComponent implements OnInit{
           error: err => {
             alert("No se pudo eliminar");
           }
-        }, 
-      )
-    }
+        })
+      }
   }
 }
