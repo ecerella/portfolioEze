@@ -5,22 +5,23 @@
     <div class="row align-items-center">
       <div class="col-1"></div>
       <div class="col-2">
-        <button type="button" class="btn btn-primary" routerLink="editSoy/1" *ngIf="isLogged">
+        <button type="button" class="btn btn-primary" routerLink="/editSoy/1" *ngIf="isLogged">
           editar persona
         </button>
       </div>
       <div class="col-3">
         <div class="foto">
-          <img
+          <!--<img
           src="../../../assets/img/moss2.png"
           alt="foto perfil"
           class="fotPerf img-fluid w-30"
-          />
-          <!--<img
-            src="{{persona.img}}"
+          />-->
+          <img
+            src="{{persona?.img}}"
             alt="foto perfil"
             class="fotPerf img-fluid w-30"
-          />-->
+            id="fotodeperfil"
+          />
         </div>
       </div>
       <div class="col-3">
